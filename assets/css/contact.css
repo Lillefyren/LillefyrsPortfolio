@@ -1,0 +1,161 @@
+body {
+  background-color: #001500;
+}
+
+p {
+  color: white;
+}
+
+.phoneskull {
+  background: url("../img/telelogo1.png") no-repeat;
+  display: block;
+  height: 93px;
+  margin: 20px 0;
+  width: 47px;
+}
+
+.phoneskull:hover {
+  background: url("../img/telelogo2.png") no-repeat;
+}
+
+#phonetext {
+  height: 20px;
+  left: 30px;
+  overflow: hidden;
+  position: relative;
+  text-align: right;
+  top: 62px;
+  transition: width 9999s linear;
+  width: 0px;
+}
+
+.phoneskull:hover > #phonetext {
+  transition: width 2s linear;
+  width: 170px;
+}
+
+.emailskull {
+  background: url("../img/emaillogo1.png") no-repeat;
+  display: block;
+  height: 93px;
+  margin: 20px 0;
+  width: 47px;
+}
+
+.emailskull:hover {
+  background: url("../img/emaillogo2.png") no-repeat;
+}
+
+#emailtext {
+  height: 20px;
+  left: 30px;
+  overflow: hidden;
+  position: relative;
+  text-align: right;
+  top: 59px;
+  transition: width 9999s linear;
+  width: 0px;
+}
+
+.emailskull:hover > #emailtext {
+  transition: width 2s linear;
+  width: 320px;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials a {
+  flex: 1;
+}
+
+#facebook {
+  background: url("../img/facebook.png") no-repeat;
+  display: block;
+  height: 93px;
+  width: 47px;
+}
+
+#twitter {
+  background: url("../img/twitter.png") no-repeat;
+  display: block;
+  height: 93px;
+  width: 47px;
+}
+
+#youtube {
+  background: url("../img/youtube.png") no-repeat;
+  display: block;
+  height: 93px;
+  width: 47px;
+}
+
+/* navigation bar code */
+.nav {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.spacer {
+  height:85px;
+  width: 100%;
+}
+
+li {
+  flex: 1;
+  padding: 20px 0;
+}
+
+li a {
+  color: white;
+  display: block;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover:not(.current) {
+  background-color: #dddddd;
+}
+
+.current {
+  background-color: green;
+}
+
+.pointerimage {
+  background-image: url("../img/skellhand.png");
+  background-repeat: no-repeat;
+  display: block;
+  float: right;
+  padding: 24px 36px;
+  z-index: 500;
+}
+
+#logo {
+  background-color: transparent;
+  background-image: url("../img/logoudkast.png");
+  background-repeat: no-repeat;
+  float:left;
+  margin: 4px 6px;
+  padding: 40px 50px;
+  z-index: 500;
+}
+
+@media screen and (max-width: 500px) {
+    .pointerimage {
+      display: none;
+    }
+    #logo{
+      padding: 40px 23px;
+    }
+}
